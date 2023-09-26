@@ -41,7 +41,7 @@ async fn execute_command(code: String) -> Result<String, String> {
     fs::write("./program.txt", code).map_err(|e| e.to_string())?;
 
     let output = Command::new("java")
-        .current_dir("Slox/java")
+        .current_dir("../../Slox/java")
         .arg("com.slox.lox.Lox")
         .arg("../../program.txt")
         .output()
