@@ -1,0 +1,17 @@
+[package]
+name = "swapver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = { version = "0.6.20", features = ["json"] }
+serde = { version = "1.0.188", features = ["derive"] }
+hyper = { version = "0.14.27", features = ["full"] }
+tokio = { version = "1.32.0", features = ["full"] }
+anyhow = "1.0.75"
+dotenvy = "0.15.7"
+
+[dev-dependencies]
+tower = { version = "0.4.13", features = ["util"] }
